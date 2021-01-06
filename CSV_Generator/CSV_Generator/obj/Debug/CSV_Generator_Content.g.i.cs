@@ -8,28 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/add_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/cancel_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/commandmode_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/create_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/delete_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/deselect_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/event_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/helplowres_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/help_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/info_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/mallmanager_programicon.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/navigateback_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/save_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/search_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/selectall_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/settingslowreswhite_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/settingslowres_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/sortalpha_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/statistics_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/storefrontlowres_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/storefront_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/view_icon.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/warninglowres_icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/icons/open_icon.png")]
 
 

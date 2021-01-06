@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,7 +23,12 @@ namespace CSV_Generator
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<string> airportEntries = new List<string>();
+        private StringBuilder currentCSV = new StringBuilder();
+        private bool creatingNewCSV = true;
+        private int numberOfRows = 0;
+        private int numberOfColumns = 0;
+        private List<string> columnNames = new List<string>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,12 +42,19 @@ namespace CSV_Generator
             string savePath = dia_SelectSaveLocation.FileName;
 
             StringBuilder finalCSV = new StringBuilder();
-            finalCSV.Append(
-                "Airport Code, Location, Nearest City, Area, Runway Numbers, Runway Length(s), Runway Width(s), Type of pavement, Flights per year\n");
-            foreach (string airportEntry in airportEntries)
+
+            if (creatingNewCSV)
             {
-                finalCSV.Append(airportEntry);
+
+                finalCSV.Append(
+                "Airport Code, Location, Nearest City, Area, Runway Numbers, Runway Length(s), Runway Width(s), Type of pavement, Flights per year\n");
+                finalCSV.Append(currentCSV.ToString());
             }
+            else
+            {
+                finalCSV = currentCSV;
+            }
+
 
             if (string.IsNullOrWhiteSpace(savePath))
             {
@@ -183,7 +196,9 @@ namespace CSV_Generator
 
             if (!emptyTextboxDetected)
             {
-                airportEntries.Add(sb.ToString());
+                currentCSV.Append(sb.ToString());
+                numberOfRows++;
+                Lb_RowCountValue.Content = numberOfRows.ToString();
                 Tb_AirportCode.Clear();
                 Tb_Area.Clear();
                 Tb_FlightsPerYear.Clear();
@@ -306,6 +321,26 @@ namespace CSV_Generator
             {
                 Tb_FlightsPerYear.BorderBrush = Brushes.Transparent;
             }
+        }
+
+        private void Btn_Open_OnClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dia_OpenFile = new OpenFileDialog();
+            dia_OpenFile.ShowDialog();
+            string fileToOpen = dia_OpenFile.FileName;
+            creatingNewCSV = false;
+            columnNames = File.ReadAllLines(fileToOpen).ToList();
+
+            foreach (var column in columnNames[0].Split(',').ToList())
+            {
+                Lst_ColNames.Items.Add(column);
+            }
+            
+            numberOfColumns = Lst_ColNames.Items.Count;
+            numberOfRows = columnNames.Count();
+
+            Lb_ColumnCountValue.Content = numberOfColumns.ToString();
+            Lb_RowCountValue.Content = numberOfRows.ToString();
         }
     }
 }

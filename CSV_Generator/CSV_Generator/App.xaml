@@ -7,6 +7,7 @@
     <Application.Resources>
 
         <FontFamily x:Key="Montserrat">pack://application:,,,/Resources/Fonts/#Montserrat</FontFamily>
+        <FontFamily x:Key="Montserrat-Black">pack://application:,,,/Resources/Fonts/#Montserrat-Black</FontFamily>
         <Brush x:Key="OrangeAccent">#FFA630</Brush>
         <Brush x:Key="NavyBlueBase">#3C4F76</Brush>
         <Brush x:Key="OrangeButtonHighlight">#FFEFE2</Brush>

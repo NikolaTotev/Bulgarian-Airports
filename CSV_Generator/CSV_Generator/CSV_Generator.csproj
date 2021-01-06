@@ -142,5 +142,8 @@
     <Resource Include="Resources\Icons\View_Icon.png" />
     <Resource Include="Resources\Icons\WarningLowRes_Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Open_Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
