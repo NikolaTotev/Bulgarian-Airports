@@ -329,6 +329,7 @@ namespace CSV_Generator
             dia_OpenFile.ShowDialog();
             string fileToOpen = dia_OpenFile.FileName;
             creatingNewCSV = false;
+            currentCSV.Append(File.ReadAllText(fileToOpen));
             columnNames = File.ReadAllLines(fileToOpen).ToList();
 
             foreach (var column in columnNames[0].Split(',').ToList())
