@@ -1,3 +1,7 @@
-TEst,Test,TEst,Test,TEst,Test,TEst,Test,Test
-Res,etetee,etetee,tes,eteete,tetetete,Test,ttete,tetetet
-Test,tests,tests,ststs,ststst,tsstst,ststs,ststs,stst
+Airport Code, Location, Nearest City, Area, Runway Numbers, Runway Length(s), Runway Width(s), Type of pavement, Flights per year
+SOF,Sofia, Vrazhdebna,Sofia,5.914 sq.m.,1,3600m,45m,Polymer modified aslphalt,61371
+PVD,6km south-east from Plovdiv,Plovdiv,1.748sq.km,1,2500,45,AslphaltConcrete ,9000
+VAR,8km from Varna,Varna,2.231 sq.km,1,2500,45,Aslphalt-Concrete,15468
+BOJ,15km North of Burgas,Burgas,2.603,1,3200,45,Aslphalt-Concrete,20873
+ROU,17km from village Shturkelovo,Ruse,1844,1,2500,50,Concrete,n/a
+GOZ,Gorna Orqhovica,Gorna Orqhovica,1.844,1,2500,50,Concrete,n/a
